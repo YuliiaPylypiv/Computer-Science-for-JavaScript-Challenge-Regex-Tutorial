@@ -120,7 +120,7 @@ For Example: <([A-Z][0-9]*)\b[^>]*>.*?</\1> This regex contains only one pair of
 
 (?<=ABC>) is a postive lookbehind and matches a group before the main expression without including it in the result.
 
-(?<!ABC) is a negitive lookbehind and Specifies a group that can not match before the main expression (if it matches, the result is discarded).
+"(?<!ABC)" is a negitive lookbehind and Specifies a group that can not match before the main expression (if it matches, the result is discarded).
 
 The Lookaheads and the Lookbehinds forces the main expressions to be what you have defined it as. Without , it will not be accepted as a valid input.
 ## Author
