@@ -4,13 +4,13 @@ As a Bootcamp 2024 student, I created a tutorial explaining of regex so that we 
 
 ## Summary
 
-Regex or regular expression is a sequence of characters that define a search pattern. Usually such patterns are used by string-searching algorithms for "find" or "find and replace" operations on strings. It also looks for input validations. It is a technique commonly developed in theoretical computer science.
+About "Regex expression" is a complex of characters that define a search pattern. Ofthen we are used by string-searching algorithms for "find" or "find and replace" operations on strings , also looks for input validations. It is good to be developed in theoretical computer science.
 
 Let`s take a look  a string of code using regex, this code looks for a match HTML tag.
 
 Example: /^<([a-z]+)([^<]+)*(?:>(.*)<\/\1>|\s+\/>)$/
 
-The below content will explain what each section of this code does and more.
+Below content will explain what each section of this code does and more:
 
 ## Table of Contents
 
@@ -108,10 +108,8 @@ Since digits are considered to be word characters, \b4\b can be used to match a 
 
 \B is the negated version of \b. \B matches at every position where \b does not. Effectively, \B matches at any position between two word characters as well as at any position between two non-word characters.
 
-There are more boundries with the Regex Engine. Some examples include Tcl, GNU, and POSIX.
-
 ### Back-references
-Backreferences match the same text as previously matched by a capturing group. Suppose you want to match a pair of opening and closing HTML tags, and the text in between. By putting the opening tag into a backreference, we can reuse the name of the tag for the closing tag.
+By putting the opening tag into a backreference, we can reuse the name of the tag for the closing tag.
 
 For Example: <([A-Z][0-9]*)\b[^>]*>.*?</\1> This regex contains only one pair of parentheses, which capture the string matched by [A-Z][0-9]*. This is the opening HTML tag. The backreference \1 references the first capturing group. \1 matches the exact same text that was matched by the first capturing group. The / before it is a literal character. It is simply the forward slash in the closing HTML tag that we are trying to match.
 
@@ -124,7 +122,7 @@ For Example: <([A-Z][0-9]*)\b[^>]*>.*?</\1> This regex contains only one pair of
 
 (?<!ABC) is a negitive lookbehind and Specifies a group that can not match before the main expression (if it matches, the result is discarded).
 
-The Lookaheads and the lookbehinds forces the main expressions to be what you have defined it as. Without , it will not be accepted as a valid input.
+The Lookaheads and the Lookbehinds forces the main expressions to be what you have defined it as. Without , it will not be accepted as a valid input.
 ## Author
 Yuliia Pylypiv 
-My GitHub link :
+My GitHub link : https://github.com/YuliiaPylypiv/Computer-Science-for-JavaScript-Challenge-Regex-Tutorial.git
